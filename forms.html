@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 FORMS</title>
+    <link rel="stylesheet" href="./css/forms.css">
+</head>
+<body>
+    <h1 id="form-head">FORMS</h1>
+    <form action="#" id="form" method="post">
+        <div class="form-sect">
+            <label class="form-label" for="firstname">Firstname:</label><br>
+            <input class="form-field" type="text" name="firstname" id="firstname" placeholder="Firstname" required>
+        </div>
+        <div class="form-sect">
+            <label class="form-label" for="lastname">Lastname:</label><br>
+            <input class="form-field" type="text" name="lastname" id="lastname" placeholder="Lastname">
+        </div>
+        <div class="form-sect">
+            <label class="form-label" for="email">Email:</label><br>
+            <input class="form-field" type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <input type="number" name="amount" value="20000" hidden>
+        <div class="form-sect">
+            <label class="form-label" for="tel">Phone Number:</label><br>
+            <input class="form-field" type="tel" name="tel" id="tel" placeholder="Phone Number">
+        </div>
+        <div class="form-sect">
+            <label for="bio" class="form-label">Biography:</label><br>
+            <textarea name="bio" id="bio" rows="10" cols="70"></textarea>
+        </div>
+        <div class="form-sect">
+            <label class="form-label" for="marital">Marital Status:</label><br>
+            <select class="form-field" name="marital" id="marital">
+                <option value="">Select an Option</option>
+                <option value="married">Married</option>
+                <option value="single">Single</option>
+                <option value="divorced">Divorced</option>
+                <option value="complicated">Complicated</option>
+            </select>
+        </div>
+        <div class="form-sect"></div>
+            <label class="form-label" for="gender">Gender:</label><br>
+            <label for="male">Male:</label>
+            <input class="form-radio" type="radio" name="gender" id="male" value="Male">
+            <label for="female">Female:</label>
+            <input class="form-radio" type="radio" name="gender" id="female" value="Female">
+        </div>
+        <div class="form-sect"></div>
+            <label class="form-label" for="hobbies">Hobbies:</label><br>
+            <label for="football">Football:</label>
+            <input class="form-radio" type="checkbox" name="hobbies" id="football" value="Football">
+            <label for="singing">Singing:</label>
+            <input class="form-radio" type="checkbox" name="hobbies" id="singing" value="Singing">
+            <label for="reading">Reading:</label>
+            <input class="form-radio" type="checkbox" name="hobbies" id="reading" value="Reading">
+            <label for="gaming">Gaming:</label>
+            <input class="form-radio" type="checkbox" name="hobbies" id="gaming" value="Gaming">
+            <label for="running">Running:</label>
+            <input class="form-radio" type="checkbox" name="hobbies" id="running" value="Running">
+            <label for="dancing">Dancing:</label>
+            <input class="form-radio" type="checkbox" name="hobbies" id="dancing" value="Dancing">
+        </div>
+        <div class="form-sect">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
